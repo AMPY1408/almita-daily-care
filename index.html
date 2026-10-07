@@ -2,79 +2,361 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Almita Daily Care Bahrain</title>
-<meta name="description" content="A family-centred childcare concept in Bahrain for Early Years and After-School Care.">
+<title>Almita Daily Care Bahrain — V2</title>
 <style>
-:root{--blue:#173f7a;--sky:#2797d3;--pink:#fff2f6;--rose:#ef7fa7;--ink:#26364b;--cream:#fffaf8}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-.wrap{max-width:1120px;margin:auto;padding:0 24px}.hero{background:linear-gradient(180deg,var(--pink),#fff);padding:38px 0 54px;border-bottom:5px solid var(--blue)}
-.brand{text-align:center}.brand h1{font-family:Georgia,serif;font-size:clamp(58px,10vw,104px);font-weight:400;line-height:.9;margin:15px 0 0;color:#24242a}
-.brand .daily{font-weight:800;letter-spacing:.22em;font-size:15px}.arabic{font-family:Tahoma,Arial,sans-serif;color:var(--blue);font-weight:700;font-size:26px;line-height:1.4;margin:14px 0}
-.tag{font-weight:800;letter-spacing:.22em;color:var(--blue);font-size:13px}.hero h2{font-size:clamp(34px,5vw,62px);line-height:1.05;color:var(--blue);margin:36px 0 10px}
-.lead{font-size:20px;max-width:780px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--blue);color:white;text-decoration:none;font-weight:700}.btn.alt{background:white;color:var(--blue);border:2px solid var(--blue)}
-.stage{margin-top:30px;color:#637086;font-weight:700}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}.stat{background:white;border-radius:18px;padding:20px;box-shadow:0 8px 30px #173f7a12}.stat b{display:block;color:var(--blue);font-size:24px}
-section{padding:70px 0}.eyebrow{font-weight:800;color:var(--sky);letter-spacing:.14em}.title{font-size:clamp(30px,4vw,48px);line-height:1.12;color:var(--blue);margin:7px 0 20px}.soft{background:var(--pink)}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e8e9ee;border-radius:20px;padding:25px;box-shadow:0 8px 24px #173f7a0d}.card h3{color:var(--blue);font-size:23px;margin:5px 0}.pill{display:inline-block;background:#eaf4fb;color:var(--blue);font-weight:700;border-radius:99px;padding:5px 10px;font-size:13px}
-.sequence{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.step{background:var(--blue);color:white;border-radius:16px;padding:22px 12px;text-align:center}.step b{display:block;font-size:26px;color:#f5b2c9}
-.founder{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:start}.quote{background:var(--pink);border-left:5px solid var(--rose);padding:25px;border-radius:16px;font-family:Georgia,serif;font-size:22px;color:var(--blue)}
-.badges{display:flex;flex-wrap:wrap;gap:8px}.badges span{border:1px solid #d8deea;border-radius:99px;padding:7px 12px;font-weight:700;font-size:13px}
-.survey{background:var(--blue);color:white}.survey .title,.survey .eyebrow{color:white}.surveybox{background:white;color:var(--ink);border-radius:20px;padding:25px;max-width:760px}.surveybox label{display:block;font-weight:700;margin:14px 0 5px}.surveybox select,.surveybox input,.surveybox textarea{width:100%;padding:12px;border:1px solid #ccd3df;border-radius:10px;font:inherit}.surveybox button{margin-top:18px;border:0;cursor:pointer}
-.media{display:grid;grid-template-columns:1fr 1fr;gap:20px}.media .card{min-height:220px}
-footer{background:#143566;color:white;padding:60px 0 35px}.closing{font-size:clamp(34px,5vw,56px);font-weight:800;line-height:1.08;margin:0 0 35px}.small{opacity:.78;font-size:13px}
-@media(max-width:800px){.stats,.grid3,.sequence{grid-template-columns:1fr 1fr}.founder,.media{grid-template-columns:1fr}}
-@media(max-width:520px){.stats,.grid3,.sequence{grid-template-columns:1fr}.hero{padding-top:24px}.brand h1{font-size:64px}}
+:root{--blue:#173f7a;--sky:#2797d3;--pink:#fff2f6;--rose:#ef7fa7;--ink:#26364b}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
+.wrap{max-width:1120px;margin:auto;padding:0 24px} .hero{background:linear-gradient(180deg,var(--pink),#fff);padding:28px 0 55px;border-bottom:5px solid var(--blue)}
+.brandrow{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px;max-width:900px;margin:auto}
+.logo{width:100%;max-width:390px;display:block;margin:auto} .arabic{font-family:Tahoma,Arial,sans-serif;color:var(--blue);font-weight:800;font-size:clamp(38px,5vw,62px);line-height:1.45;text-align:center}
+.tag{text-align:center;font-weight:800;letter-spacing:.22em;color:#222;font-size:13px;margin:12px 0 26px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center} .hero-photo{height:340px;overflow:hidden;border-radius:26px}.hero-img{width:100%;height:500px;object-fit:cover;object-position:center top;border-radius:26px;display:block;transform:scale(1.18);transform-origin:50% 0}
+h1{font-size:clamp(38px,5vw,62px);line-height:1.05;color:var(--blue);margin:0 0 15px} .lead{font-size:20px}
+.btn{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--blue);color:white;text-decoration:none;font-weight:700;margin:8px 8px 0 0}
+section{padding:70px 0} .soft{background:var(--pink)} .eyebrow{font-weight:800;color:var(--sky);letter-spacing:.14em} .title{font-size:clamp(30px,4vw,48px);line-height:1.12;color:var(--blue);margin:7px 0 20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px} .card{background:#fff;border:1px solid #e8e9ee;border-radius:20px;padding:25px;box-shadow:0 8px 24px #173f7a0d}
+.card h3{color:var(--blue)} .founder{display:grid;grid-template-columns:.85fr 1.15fr;gap:38px;align-items:center} .founder img{width:100%;border-radius:24px}
+.quote{background:#fff;border-left:5px solid var(--rose);padding:22px;border-radius:16px;font-family:Georgia,serif;font-size:21px;color:var(--blue)}
+.media{display:grid;grid-template-columns:1fr 1fr;gap:25px} .media-card{background:#fff;border:1px solid #e8e9ee;border-radius:22px;overflow:hidden;box-shadow:0 8px 24px #173f7a0d}
+.media-card img{width:100%;height:330px;object-fit:cover;display:block} .media-card.book img{object-fit:contain;background:#fff} .media-body{padding:24px}
+.pill{display:inline-block;background:#eaf4fb;color:var(--blue);font-weight:700;border-radius:99px;padding:5px 10px;font-size:13px}
+footer{background:#143566;color:white;padding:55px 0 35px} .closing{font-size:clamp(34px,5vw,56px);font-weight:800;line-height:1.08}
+@media(max-width:760px){.brandrow,.hero-grid,.founder,.media,.grid3{grid-template-columns:1fr} .arabic{font-size:40px} .hero-img{height:310px}}
+
+.langbar{display:flex;justify-content:flex-end;gap:7px;flex-wrap:wrap;margin-bottom:18px}
+.langbtn{border:1px solid #173f7a;background:#fff;color:#173f7a;border-radius:999px;padding:7px 12px;font-weight:700;cursor:pointer}
+.langbtn.active{background:#173f7a;color:#fff}
+[dir="rtl"] .langbar{justify-content:flex-start}
+
+.clean-hero-photo{width:100%;height:390px;overflow:hidden;border-radius:26px;margin:8px 0 28px}
+.clean-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+
+.founder{grid-template-columns:.72fr 1.25fr .75fr!important;align-items:start}
+.founder-photo img{width:100%;display:block;border-radius:20px;object-fit:cover;filter:grayscale(100%)}
+@media(max-width:800px){.founder{grid-template-columns:1fr!important}.founder-photo{max-width:420px}}
+</style>
+<style>
+.philosophy-section{padding:58px 0}
+.philosophy-card{background:#fff2f6;border-radius:26px;padding:34px;box-shadow:0 12px 35px rgba(23,63,122,.07)}
+.philosophy-card>p{max-width:820px}
+.philosophy-toggle{margin-top:10px;border:0;border-radius:999px;padding:13px 22px;background:#173f7a;color:white;font:inherit;font-weight:700;cursor:pointer}
+.philosophy-more{margin-top:28px;max-width:900px}
+.philosophy-more h3{color:#173f7a;margin:24px 0 8px}
+.philosophy-principle{margin-top:26px;padding:18px 20px;border-radius:18px;background:white;color:#173f7a}
+</style>
+
+<style>
+.brandrow .arabic{
+  color:#222 !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  font-weight:800;
+  margin-top:8px;
+}
+.brandrow .arabic::before,
+.brandrow .arabic::after{
+  content:"";
+  width:58px;
+  height:3px;
+  background:#ef7fa7;
+  border-radius:3px;
+  flex:0 0 auto;
+}
+@media(max-width:520px){
+  .brandrow .arabic{gap:12px}
+  .brandrow .arabic::before,.brandrow .arabic::after{width:34px;height:2px}
+}
+</style>
+
+<style>
+.brandrow .arabic{
+  color:#222 !important;
+}
+.brandrow .arabic::before,
+.brandrow .arabic::after{
+  display:none !important;
+  content:none !important;
+}
+</style>
+
+<style>
+/* Arabic brand: two centered lines. Almita above; Daily Care smaller below. */
+.brandrow .arabic{display:block !important;text-align:center !important;color:#222 !important;}
+.brandrow .arabic .ar-almita{display:inline;font:inherit;color:inherit;}
+.brandrow .arabic .ar-daily{display:inline;font-family:inherit;font-style:inherit;font-weight:inherit;font-size:72%;color:inherit;}
+.brandrow .arabic::before,.brandrow .arabic::after{display:none !important;content:none !important;}
+</style>
+
+<style>
+/* Educator photo: preserve the whole original image on every screen size. */
+.clean-hero-photo{
+  height:auto !important;
+  overflow:hidden !important;
+}
+.clean-hero-photo img{
+  width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  display:block !important;
+}
+
+/* Founder references: separate pills, not running text. */
+.badges{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  margin-top:18px !important;
+}
+.badges span{
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+  padding:9px 13px !important;
+  border:1px solid #d5ddea !important;
+  border-radius:999px !important;
+  background:#fff7fa !important;
+  color:#26364b !important;
+  font-size:14px !important;
+  font-weight:700 !important;
+  line-height:1.2 !important;
+}
+</style>
+
+<style>
+.badges{
+  display:block !important;
+  margin-top:18px !important;
+}
+.badges .badge-row{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  margin:0 0 10px 0 !important;
+}
+.badges .badge-row:last-child{margin-bottom:0 !important;}
+.badges .badge-row span{
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+}
+</style>
+
+<style>
+.badges .badge-row .two-line-badge{
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:3px !important;
+}
+.badges .badge-row .two-line-badge strong{
+  font:inherit !important;
+  font-weight:700 !important;
+}
+.badges .badge-row .two-line-badge small{
+  display:block !important;
+  font-size:11px !important;
+  font-weight:600 !important;
+  line-height:1.2 !important;
+  opacity:.72 !important;
+}
+</style>
+
+<style id="book-press-accordion-css">
+.bp-shell{margin-top:22px}.bp-toggle{border:0;border-radius:999px;background:var(--blue);color:white;font-weight:800;font-size:16px;padding:13px 22px;cursor:pointer;box-shadow:0 8px 20px rgba(23,63,122,.16)}.bp-toggle:hover{transform:translateY(-1px)}.bp-toggle .arrow{display:inline-block;margin-left:8px;transition:.2s}.bp-toggle[aria-expanded="true"] .arrow{transform:rotate(180deg)}.bp-panel{display:none;margin-top:22px}.bp-panel.open{display:block}.bp-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.bp-card{background:#fff;border:1px solid #e7e9ef;border-radius:24px;padding:22px;box-shadow:0 14px 35px rgba(38,54,75,.08)}.bp-card h3{margin:10px 0 8px;color:var(--blue);font-size:26px}.bp-book-img{width:100%;border-radius:18px;display:block;box-shadow:0 10px 24px rgba(38,54,75,.12)}.bp-press-frame{background:#f7f0e7;padding:16px;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(38,54,75,.06)}.bp-press-img{width:100%;display:block;border-radius:10px;filter:contrast(1.02);box-shadow:0 10px 22px rgba(38,54,75,.16)}.bp-visible-text{margin-top:16px;padding:16px 18px;border-left:4px solid var(--rose);background:#fff7fa;border-radius:12px;line-height:1.65}.bp-note{font-size:13px;opacity:.7;margin-top:10px}@media(max-width:780px){.bp-grid{grid-template-columns:1fr}.bp-card{padding:16px}.bp-card h3{font-size:23px}}
 </style>
 </head>
 <body>
 <header class="hero"><div class="wrap">
-<div class="brand">
-<div class="tag">FAMILY • CARE • COMMUNITY</div>
-<h1>Almita</h1><div class="daily">DAILY CARE BAHRAIN</div>
-<div class="arabic" dir="rtl">ألميتا<br>الرعاية اليومية</div>
+<div class="langbar" aria-label="Language">
+<button class="langbtn active" data-lang="en">🇬🇧 English</button>
+<button class="langbtn" data-lang="es">🇪🇸 Español</button>
+<button class="langbtn" data-lang="de">🇩🇪 Deutsch</button>
+<button class="langbtn" data-lang="ar">🇧🇭 العربية</button>
 </div>
-<h2>WELCOME TO ALMITA</h2>
-<p class="lead"><b>A warm place to care, play & grow.</b><br>A family-centred childcare concept being created in Bahrain for little ones, school-age children and the families who care for them.</p>
-<div class="buttons"><a class="btn" href="#survey">Share your family's needs</a><a class="btn alt" href="#services">Explore Almita</a></div>
-<div class="stage">Planning & market-validation stage • Bahrain 2026</div>
-<div class="stats"><div class="stat"><b>0–4</b>Early Years Care</div><div class="stat"><b>4–12</b>After-School Care</div><div class="stat"><b>Play</b>Movement • creativity • wellbeing</div><div class="stat"><b>Languages</b>English • Arabic • German • Spanish</div></div>
-</div></header>
+<div class="brandrow">
+  <img class="logo" src="assets/logo.jpg" alt="Almita Daily Care Bahrain logo">
+  <div class="arabic" dir="rtl"><span class="ar-almita">ألميتا</span><br><span class="ar-daily">الرعاية اليومية</span></div>
+</div>
+<div class="tag">FAMILY • CARE • COMMUNITY</div>
+<div class="hero-grid">
+<div><div class="clean-hero-photo"><img src="assets/educator.png" alt="Educator with diverse children"></div>
+<h1>WELCOME TO ALMITA</h1><p class="lead"><b>A warm place to care, play & grow.</b><br>A family-centred childcare concept being created in Bahrain for little ones, school-age children and the families who care for them.</p>
+<a class="btn" href="#survey">Parent Survey</a><a class="btn" href="#services">Explore Almita</a>
+<p><b>Planning & market-validation stage • Bahrain 2027</b></p></div>
 
-<section><div class="wrap"><div class="eyebrow">WHY ALMITA</div><h2 class="title">Childcare should work with family life — not against it.</h2>
-<p>Almita is currently in market-validation and regulatory-planning stage. The concept aims to support working families with flexible care while keeping safety, emotional wellbeing, movement, play and respectful relationships at the centre.</p>
-<div class="grid3"><div class="card"><h3>The family challenge</h3><p>Parents may need dependable care not only while they work, but also for appointments, changing schedules and the hours between school dismissal and the end of the working day.</p></div>
-<div class="card"><h3>The Almita response</h3><p>A welcoming daily-care environment for approximately ages 0–4, combined with a separate after-school offer for primary children: homework support, movement, creative play, board games and optional language experiences.</p></div>
-<div class="card"><h3>Respect for Bahrain</h3><p>A concept designed to listen first, respect local culture and family values, and serve both Bahraini and international families.</p></div></div></div></section>
+</div></div></header>
 
 <section id="services" class="soft"><div class="wrap"><div class="eyebrow">PROPOSED SERVICES</div><h2 class="title">One concept, different moments of family life.</h2><p>The final service structure, ages and operating model remain subject to Bahrain regulatory approval.</p>
-<div class="grid3"><div class="card"><span class="pill">Approx. 0–4 years</span><h3>☀️ Early Years Care</h3><p>Morning, full-day and pre-booked care on selected days with age-appropriate routines, play, movement, rest and emotional security.</p></div>
+<div class="grid3">
+<div class="card"><span class="pill">Approx. 0–4 years</span><h3>☀️ Early Years Care</h3><p>Morning, full-day and pre-booked care on selected days with age-appropriate routines, play, movement, rest and emotional security.</p></div>
 <div class="card"><span class="pill">Primary • 4–12 years</span><h3>🎒 After-School Care</h3><p>A safe place after school with homework support, healthy routines, movement, games, creativity and time to decompress.</p></div>
-<div class="card"><span class="pill">Founder-led initially</span><h3>🌍 German & Spanish Clubs</h3><p>Natural language exposure through games, stories, songs, movement and real interaction — an international extra, not a formal school lesson.</p></div></div></div></section>
-
-<section><div class="wrap"><div class="eyebrow">OUR PHILOSOPHY</div><h2 class="title">At Almita, childcare begins with safety.</h2><div class="sequence"><div class="step"><b>01</b>Safety</div><div class="step"><b>02</b>Trust</div><div class="step"><b>03</b>Belonging</div><div class="step"><b>04</b>Development</div><div class="step"><b>05</b>Learning</div></div></div></section>
-
-<section class="soft"><div class="wrap founder"><div><div class="eyebrow">FOUNDER & EDUCATIONAL DIRECTOR</div><h2 class="title">Alvaro Marcelo Prieto Ypanaque</h2>
-<p>Almita is shaped by <b>13 years of professional experience</b> with children, young people and families across education and social work, supported by German academic and professional qualifications. The founder’s background includes residential child and youth welfare, child protection, safeguarding, de-escalation and non-violent communication.</p>
-<p>His life and work across Peru, Germany and Vietnam bring an international perspective. Spanish heritage and a German educational and professional background support a family-centred vision that aims to listen first and respect Bahrain’s culture and family values.</p>
-<p><b>TESOL Teacher Training — 2026 • Completed with High Distinction.</b></p>
-<div class="badges"><span>BA Social Work / Social Pedagogy</span><span>German state recognition</span><span>Safeguarding</span><span>Child protection</span><span>De-escalation</span><span>English • Arabic • German • Spanish</span></div></div>
-<div class="quote">“Different countries shaped his journey. Love brought him to Bahrain. Almita gives that new chapter a purpose.”</div></div></section>
-
-<section><div class="wrap"><div class="eyebrow">PUBLICATIONS & MEDIA</div><h2 class="title">A journey of purpose, growth and care.</h2>
-<div class="media"><div class="card"><span class="pill">BOOK</span><h3>Conócete a ti mismo / Know Yourself</h3><p>A personal journey around self-knowledge, personal growth and finding purpose in life — presented as part of the founder’s story and not as a religious framework for Almita.</p></div>
-<div class="card"><span class="pill">PRESS • 2021</span><h3>Express — Germany</h3><p>A press feature about Alvaro’s professional journey in Germany’s social sector and his work with children and young people. The original clipping will be added to the final media gallery.</p></div></div></div></section>
-
-<section id="survey" class="survey"><div class="wrap"><div class="eyebrow">BAHRAIN PARENT SURVEY 2026</div><h2 class="title">Help us design care around real family needs.</h2>
-<p>We are aiming for at least 200 parent responses. This preview shows the future online survey; response storage will be connected before public launch.</p>
-<div class="surveybox">
-<label>1. Age group(s) of your children</label><select><option>Select</option><option>Under 1</option><option>1–2 years</option><option>2–3 years</option><option>3–4 years</option><option>Primary school / 4–12 years</option></select>
-<label>2. Area in Bahrain</label><select><option>Select area</option><option>Saar</option><option>Janabiya</option><option>Hamala</option><option>Manama / Juffair</option><option>Amwaj / Muharraq</option><option>Riffa</option><option>Other</option></select>
-<label>3. Which service would your family realistically use?</label><select><option>Select</option><option>Early Years Morning Care (0–4)</option><option>Early Years Full Day Care (0–4)</option><option>Pre-booked care on selected days (0–4)</option><option>After-School Care (4–12)</option><option>Holiday / school-break care</option></select>
-<label>Transport needed? How much would you pay?</label><input placeholder="Your answer">
-<label>Suggestions for Almita</label><textarea rows="4" placeholder="What would make childcare work better for your family?"></textarea>
-<label>Email (optional — for Almita updates)</label><input type="email" placeholder="name@example.com">
-<button class="btn" type="button">Survey preview — not yet submitting</button>
-<p class="small" style="color:#667">Market research only. Almita is in planning and regulatory consultation and is not presented as an already licensed childcare provider.</p>
+<div class="card"><span class="pill">Founder-led initially</span><h3>🌍 German & Spanish Clubs</h3><p>Natural language exposure through games, stories, songs, movement and real interaction — an international extra, not a formal school lesson.</p></div>
 </div></div></section>
 
-<footer><div class="wrap"><p class="closing">Rooted in Bahrain.<br>Open to the world.</p><p>ALMITA DAILY CARE BAHRAIN</p><div class="arabic" dir="rtl" style="color:white;text-align:left">ألميتا • الرعاية اليومية</div><p class="small">Family-centred childcare concept • Planning & market-validation stage • Bahrain 2026</p></div></footer>
+
+<section class="philosophy-section">
+  <div class="wrap">
+    <div class="philosophy-card">
+      <div class="eyebrow">OUR PHILOSOPHY</div>
+      <h2 class="title">Growing with the child — step by step.</h2>
+      <p>Discover the educational philosophy behind Almita and our child-centred approach to development, relationships and learning.</p>
+      <button class="philosophy-toggle" type="button" aria-expanded="false">Our Philosophy</button>
+      <div class="philosophy-more" hidden>
+        <p>Almita brings a German educational perspective shaped by a holistic and child-centred understanding of development. Children are not expected to develop everything at once. Each stage of childhood has its own needs, rhythms and ways of learning.</p>
+        <h3>0–7 years — Learning through experience</h3>
+        <p>In the early years, children discover the world through imitation, movement, sensory experiences, emotional bonds, creativity and free play. A safe relationship and a predictable daily rhythm create the foundation for confidence and healthy development.</p>
+        <h3>7–14 years — Learning through connection</h3>
+        <p>As children grow, thinking, emotions and social awareness develop further. Creativity, imagination, friendships, responsibility, empathy and belonging become increasingly important. Almita aims to support this development through meaningful activities, movement, relationships and age-appropriate guidance.</p>
+        <div class="philosophy-principle"><b>Our principle:</b><br>Safety → Trust → Belonging → Development → Learning</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="soft"><div class="wrap founder">
+<div class="founder-photo"><img src="assets/founder.jpg" alt="Alvaro Marcelo Prieto Ypanaque"></div>
+<div><div class="eyebrow">FOUNDER & EDUCATIONAL DIRECTOR</div><h2 class="title">Alvaro Marcelo Prieto Ypanaque</h2>
+<p>Almita is shaped by <b>13 years of professional experience</b> with children, young people and families across education and social work, supported by German academic and professional qualifications. The founder’s background includes residential child and youth welfare, child protection, safeguarding, de-escalation and non-violent communication.</p>
+<p>His life and work across Peru, Germany and Vietnam bring an international perspective. Spanish heritage and a German educational and professional background support a family-centred vision that aims to listen first and respect Bahrain’s culture and family values.</p>
+<div class="badges">
+<div class="badge-row">
+  <span class="two-line-badge"><strong>Waldorf / Steiner Education</strong><small>Lima, Peru</small></span>
+  <span>German Language – State Recognized</span>
+</div>
+<div class="badge-row">
+  <span class="two-line-badge"><strong>BA Social Work / Social Pedagogy</strong><small>Cologne University of Applied Sciences</small></span>
+</div>
+<div class="badge-row">
+  <span>Safeguarding</span>
+  <span>Child Protection</span>
+  <span>De-escalation</span>
+</div>
+<div class="badge-row">
+  <span>German • Spanish • English</span>
+</div>
+<div class="badge-row">
+  <span>TESOL Teacher Training — 2026 • High Distinction</span>
+</div>
+</div></div>
+<div class="quote">“Different countries shaped his journey. Love brought him to Bahrain. Almita gives that new chapter a purpose.”</div></div></section>
+
+<section><div class="wrap"><div class="eyebrow">BOOK &amp; PRESS</div><h2 class="title">A journey of purpose, growth and care.</h2>
+<div class="bp-shell">
+<button class="bp-toggle" id="bpToggle" type="button" aria-expanded="false" aria-controls="bpPanel">Book &amp; Press <span class="arrow">⌄</span></button>
+<div class="bp-panel" id="bpPanel">
+<div class="bp-grid">
+<article class="bp-card"><span class="pill">BOOK • AUTHOR</span><h3>Know Yourself / Conócete a ti mismo</h3><img class="bp-book-img" src="assets/book.png" alt="Know Yourself book by Alvaro Prieto"><p><b>Author: Alvaro Marcelo Prieto Ypanaque</b></p><p>A concise personal journey about self-knowledge, growth and finding purpose in life — part of the founder’s story behind Almita.</p></article>
+<article class="bp-card"><span class="pill">PRESS • GERMANY</span><h3>Peruaner mit Kölschen Herzen erobert der Soziale Bereich</h3><div class="bp-press-frame"><img class="bp-press-img" src="assets/press.jpg" alt="Original German newspaper clipping about Alvaro Prieto"></div><div class="bp-visible-text"><b>Visible text from the original clipping:</b><br><br>„Alvi“, wie er von den Kindern und Jugendlichen genannt wird, kam nach Deutschland mit 18 Jahren und nach Höhen und Tiefen in seinem Werdegang hat er sein Beruf als Sozialarbeiter zu seiner Berufung gemacht. Die Vision von Alvaro Marcelo Prieto Ypanaque: Kindern und Jugendlichen in dem sozialen Bereich einen Weg zu zeigen durch körperliche Betätigung, Yoga, Atemübungen, Spiritualität und viel LIEBE, ihre Kinder-Seelen zurück zu bringen, damit sie später selber lieben, verzeihen und eine Familie …</div><p class="bp-note">The surviving clipping ends with “... Seite 10”; the continuation is no longer available.</p></article>
+</div></div></div></div></section>
+
+<section id="survey" class="soft"><div class="wrap"><div class="eyebrow">BAHRAIN PARENT SURVEY 2027</div><h2 class="title">Help us design care around real family needs.</h2><p>The online parent survey will validate demand for Early Years Care, After-School Care, selected-day care, transport and language options.</p><a class="btn" href="#">Open Parent Survey</a></div></section>
+
+<footer><div class="wrap"><p class="closing">Rooted in Bahrain.<br>Open to the world.</p><p><b>ALMITA DAILY CARE BAHRAIN</b></p><p dir="rtl" style="font-size:28px;text-align:left">ألميتا • الرعاية اليومية</p><p>FAMILY • CARE • COMMUNITY</p></div></footer>
+
+<script>
+const T = {"es": {"WELCOME TO ALMITA": "BIENVENIDOS A ALMITA", "A warm place to care, play & grow.": "Un lugar cálido para cuidar, jugar y crecer.", "A family-centred childcare concept being created in Bahrain for little ones, school-age children and the families who care for them.": "Un concepto de cuidado infantil centrado en la familia que se está desarrollando en Bahréin para los más pequeños, niños en edad escolar y sus familias.", "Parent Survey": "Encuesta para padres", "Explore Almita": "Descubre Almita", "Planning & market-validation stage • Bahrain 2027": "Etapa de planificación y validación de mercado • Bahréin 2027", "PROPOSED SERVICES": "SERVICIOS PROPUESTOS", "One concept, different moments of family life.": "Un concepto para diferentes momentos de la vida familiar.", "The final service structure, ages and operating model remain subject to Bahrain regulatory approval.": "La estructura final de servicios, edades y modelo operativo estarán sujetos a la aprobación regulatoria en Bahréin.", "Approx. 0–4 years": "Aprox. 0–4 años", "☀️ Early Years Care": "☀️ Cuidado infantil 0–4", "Morning, full-day and pre-booked care on selected days with age-appropriate routines, play, movement, rest and emotional security.": "Cuidado de mañana, día completo y días seleccionados con reserva previa, con rutinas apropiadas para la edad, juego, movimiento, descanso y seguridad emocional.", "Primary • 4–12 years": "Primaria • 4–12 años", "🎒 After-School Care": "🎒 Cuidado después de la escuela", "A safe place after school with homework support, healthy routines, movement, games, creativity and time to decompress.": "Un lugar seguro después de la escuela con apoyo en las tareas, rutinas saludables, movimiento, juegos, creatividad y tiempo para relajarse.", "Founder-led initially": "Inicialmente dirigido por el fundador", "🌍 German & Spanish Clubs": "🌍 Clubs de alemán y español", "Natural language exposure through games, stories, songs, movement and real interaction — an international extra, not a formal school lesson.": "Contacto natural con los idiomas mediante juegos, historias, canciones, movimiento e interacción real: una experiencia internacional adicional, no una clase escolar formal.", "FOUNDER & EDUCATIONAL DIRECTOR": "FUNDADOR Y DIRECTOR PEDAGÓGICO", "Almita is shaped by 13 years of professional experience with children, young people and families across education and social work, supported by German academic and professional qualifications.": "Almita nace de 13 años de experiencia profesional con niños, jóvenes y familias en educación y pedagogía social, respaldada por formación académica y profesional alemana.", "His journey across Peru, Germany and Vietnam brings together professional discipline, Latin American warmth and an international perspective — with deep respect for Bahrain’s culture and family values.": "Su recorrido por Perú, Alemania y Vietnam combina disciplina profesional, calidez latinoamericana y una perspectiva internacional, con profundo respeto por la cultura y los valores familiares de Bahréin.", "TESOL Teacher Training — 2026 • Completed with High Distinction.": "Formación docente TESOL — 2026 • Finalizada con High Distinction.", "“Different countries shaped his journey. Love brought him to Bahrain. Almita gives that new chapter a purpose.”": "«Diferentes países marcaron su camino. El amor lo llevó a Bahréin. Almita da propósito a este nuevo capítulo.»", "BOOK & PRESS": "LIBRO Y PRENSA", "A journey of purpose, growth and care.": "Un camino de propósito, crecimiento y cuidado.", "BOOK • AUTHOR": "LIBRO • AUTOR", "Author: Alvaro Marcelo Prieto Ypanaque": "Autor: Alvaro Marcelo Prieto Ypanaque", "A concise personal journey about self-knowledge, growth and finding purpose in life — part of the founder’s story behind Almita.": "Un recorrido personal y conciso sobre autoconocimiento, crecimiento y propósito de vida, como parte de la historia del fundador detrás de Almita.", "PRESS • GERMANY • 2021": "PRENSA • ALEMANIA • 2021", "Pedagogical work is rewarded": "El trabajo pedagógico es reconocido", "Alvaro Prieto was recognized for his long-standing educational work with children and young people. The feature highlights his responsible work, personal commitment and dedication to supporting young people.": "Alvaro Prieto fue reconocido por su larga trayectoria de trabajo pedagógico con niños y jóvenes. El artículo destaca su labor responsable, compromiso personal y dedicación al acompañamiento de jóvenes.", "BAHRAIN PARENT SURVEY 2027": "ENCUESTA PARA PADRES EN BAHRÉIN 2027", "Help us design care around real family needs.": "Ayúdanos a diseñar un cuidado adaptado a las necesidades reales de las familias.", "The online parent survey will validate demand for Early Years Care, After-School Care, selected-day care, transport and language options.": "La encuesta online permitirá validar la demanda de cuidado infantil, cuidado después de la escuela, días seleccionados, transporte y opciones de idiomas.", "Open Parent Survey": "Abrir encuesta para padres", "Rooted in Bahrain.": "Con raíces en Bahréin.", "Open to the world.": "Abiertos al mundo."}, "de": {"WELCOME TO ALMITA": "WILLKOMMEN BEI ALMITA", "A warm place to care, play & grow.": "Ein warmer Ort zum Betreuen, Spielen und Wachsen.", "A family-centred childcare concept being created in Bahrain for little ones, school-age children and the families who care for them.": "Ein familienorientiertes Betreuungskonzept in Bahrain für kleine Kinder, Schulkinder und ihre Familien.", "Parent Survey": "Elternumfrage", "Explore Almita": "Almita entdecken", "Planning & market-validation stage • Bahrain 2027": "Planungs- & Marktvalidierungsphase • Bahrain 2027", "PROPOSED SERVICES": "GEPLANTE ANGEBOTE", "One concept, different moments of family life.": "Ein Konzept für unterschiedliche Momente im Familienalltag.", "The final service structure, ages and operating model remain subject to Bahrain regulatory approval.": "Die endgültige Angebotsstruktur, Altersgruppen und das Betriebsmodell stehen unter dem Vorbehalt der behördlichen Genehmigung in Bahrain.", "Approx. 0–4 years": "Ca. 0–4 Jahre", "☀️ Early Years Care": "☀️ Early Years Betreuung", "Morning, full-day and pre-booked care on selected days with age-appropriate routines, play, movement, rest and emotional security.": "Morgen-, Ganztags- und vorab gebuchte Betreuung an ausgewählten Tagen mit altersgerechten Routinen, Spiel, Bewegung, Ruhe und emotionaler Sicherheit.", "Primary • 4–12 years": "Grundschule • 4–12 Jahre", "🎒 After-School Care": "🎒 Nachmittagsbetreuung", "A safe place after school with homework support, healthy routines, movement, games, creativity and time to decompress.": "Ein sicherer Ort nach der Schule mit Hausaufgabenbegleitung, gesunden Routinen, Bewegung, Spielen, Kreativität und Zeit zum Abschalten.", "Founder-led initially": "Zu Beginn vom Gründer geleitet", "🌍 German & Spanish Clubs": "🌍 Deutsch- & Spanisch-Clubs", "Natural language exposure through games, stories, songs, movement and real interaction — an international extra, not a formal school lesson.": "Natürlicher Sprachkontakt durch Spiele, Geschichten, Lieder, Bewegung und echte Interaktion – eine internationale Ergänzung, kein formaler Schulunterricht.", "FOUNDER & EDUCATIONAL DIRECTOR": "GRÜNDER & PÄDAGOGISCHE LEITUNG", "Almita is shaped by 13 years of professional experience with children, young people and families across education and social work, supported by German academic and professional qualifications.": "Almita wird von 13 Jahren Berufserfahrung mit Kindern, Jugendlichen und Familien in Bildung und Sozialpädagogik geprägt, gestützt durch deutsche akademische und berufliche Qualifikationen.", "His journey across Peru, Germany and Vietnam brings together professional discipline, Latin American warmth and an international perspective — with deep respect for Bahrain’s culture and family values.": "Sein Weg durch Peru, Deutschland und Vietnam verbindet professionelle Disziplin, lateinamerikanische Herzlichkeit und internationale Erfahrung – mit großem Respekt für Bahrains Kultur und Familienwerte.", "TESOL Teacher Training — 2026 • Completed with High Distinction.": "TESOL Teacher Training — 2026 • Mit High Distinction abgeschlossen.", "“Different countries shaped his journey. Love brought him to Bahrain. Almita gives that new chapter a purpose.”": "„Verschiedene Länder haben seinen Weg geprägt. Die Liebe brachte ihn nach Bahrain. Almita gibt diesem neuen Kapitel einen Sinn.“", "BOOK & PRESS": "BUCH & PRESSE", "A journey of purpose, growth and care.": "Ein Weg voller Sinn, Entwicklung und Fürsorge.", "BOOK • AUTHOR": "BUCH • AUTOR", "Author: Alvaro Marcelo Prieto Ypanaque": "Autor: Alvaro Marcelo Prieto Ypanaque", "A concise personal journey about self-knowledge, growth and finding purpose in life — part of the founder’s story behind Almita.": "Eine persönliche Reise über Selbsterkenntnis, Entwicklung und Sinnfindung – als Teil der Geschichte des Gründers hinter Almita.", "PRESS • GERMANY • 2021": "PRESSE • DEUTSCHLAND • 2021", "Pedagogical work is rewarded": "Pädagogisches Arbeiten wird belohnt", "Alvaro Prieto was recognized for his long-standing educational work with children and young people. The feature highlights his responsible work, personal commitment and dedication to supporting young people.": "Alvaro Prieto wurde für sein langjähriges pädagogisches Engagement mit Kindern und Jugendlichen gewürdigt. Der Beitrag hebt seine verantwortungsvolle Arbeit, seinen persönlichen Einsatz und seine Leidenschaft für die Begleitung junger Menschen hervor.", "BAHRAIN PARENT SURVEY 2027": "BAHRAIN ELTERNUMFRAGE 2027", "Help us design care around real family needs.": "Helfen Sie uns, Betreuung an den tatsächlichen Bedürfnissen von Familien auszurichten.", "The online parent survey will validate demand for Early Years Care, After-School Care, selected-day care, transport and language options.": "Die Online-Elternumfrage erfasst den Bedarf an Early Years Betreuung, Nachmittagsbetreuung, Betreuung an ausgewählten Tagen, Transport und Sprachangeboten.", "Open Parent Survey": "Elternumfrage öffnen", "Rooted in Bahrain.": "In Bahrain verwurzelt.", "Open to the world.": "Offen für die Welt."}, "ar": {"WELCOME TO ALMITA": "مرحباً بكم في ألميتا", "A warm place to care, play & grow.": "مكان دافئ للرعاية واللعب والنمو.", "A family-centred childcare concept being created in Bahrain for little ones, school-age children and the families who care for them.": "مفهوم للرعاية يتم تطويره في البحرين ويركّز على الأسرة والأطفال الصغار والأطفال في سن المدرسة.", "Parent Survey": "استبيان أولياء الأمور", "Explore Almita": "اكتشف ألميتا", "Planning & market-validation stage • Bahrain 2027": "مرحلة التخطيط والتحقق من السوق • البحرين 2027", "PROPOSED SERVICES": "الخدمات المقترحة", "One concept, different moments of family life.": "مفهوم واحد لمراحل مختلفة من حياة الأسرة.", "The final service structure, ages and operating model remain subject to Bahrain regulatory approval.": "يخضع الهيكل النهائي للخدمات والفئات العمرية ونموذج التشغيل للموافقات التنظيمية في البحرين.", "Approx. 0–4 years": "تقريباً 0–4 سنوات", "☀️ Early Years Care": "☀️ رعاية السنوات المبكرة", "Morning, full-day and pre-booked care on selected days with age-appropriate routines, play, movement, rest and emotional security.": "رعاية صباحية أو ليوم كامل أو بالحجز المسبق في أيام مختارة، مع روتين مناسب للعمر واللعب والحركة والراحة والأمان العاطفي.", "Primary • 4–12 years": "المرحلة الابتدائية • 4–12 سنة", "🎒 After-School Care": "🎒 رعاية ما بعد المدرسة", "A safe place after school with homework support, healthy routines, movement, games, creativity and time to decompress.": "مكان آمن بعد المدرسة مع دعم الواجبات وروتين صحي وحركة وألعاب وإبداع ووقت للاسترخاء.", "Founder-led initially": "بإشراف المؤسس في البداية", "🌍 German & Spanish Clubs": "🌍 نوادي الألمانية والإسبانية", "Natural language exposure through games, stories, songs, movement and real interaction — an international extra, not a formal school lesson.": "تجربة لغوية طبيعية عبر الألعاب والقصص والأغاني والحركة والتفاعل الحقيقي، كإضافة دولية وليست درساً مدرسياً رسمياً.", "FOUNDER & EDUCATIONAL DIRECTOR": "المؤسس والمدير التربوي", "Almita is shaped by 13 years of professional experience with children, young people and families across education and social work, supported by German academic and professional qualifications.": "تستند ألميتا إلى 13 عاماً من الخبرة المهنية مع الأطفال والشباب والعائلات في التعليم والتربية الاجتماعية، مدعومة بمؤهلات أكاديمية ومهنية ألمانية.", "His journey across Peru, Germany and Vietnam brings together professional discipline, Latin American warmth and an international perspective — with deep respect for Bahrain’s culture and family values.": "تجمع رحلته عبر بيرو وألمانيا وفيتنام بين الانضباط المهني والدفء اللاتيني والمنظور الدولي، مع احترام عميق لثقافة البحرين وقيم الأسرة.", "TESOL Teacher Training — 2026 • Completed with High Distinction.": "تدريب TESOL للمعلمين — 2026 • أُنجز بتقدير High Distinction.", "“Different countries shaped his journey. Love brought him to Bahrain. Almita gives that new chapter a purpose.”": "«شكّلت بلدان مختلفة رحلته. قاده الحب إلى البحرين. وتمنح ألميتا هذا الفصل الجديد هدفاً.»", "BOOK & PRESS": "الكتاب والصحافة", "A journey of purpose, growth and care.": "رحلة من الهدف والنمو والرعاية.", "BOOK • AUTHOR": "كتاب • المؤلف", "Author: Alvaro Marcelo Prieto Ypanaque": "المؤلف: Alvaro Marcelo Prieto Ypanaque", "A concise personal journey about self-knowledge, growth and finding purpose in life — part of the founder’s story behind Almita.": "رحلة شخصية موجزة حول معرفة الذات والنمو وإيجاد الهدف في الحياة، وهي جزء من قصة مؤسس ألميتا.", "PRESS • GERMANY • 2021": "الصحافة • ألمانيا • 2021", "Pedagogical work is rewarded": "العمل التربوي يحظى بالتقدير", "Alvaro Prieto was recognized for his long-standing educational work with children and young people. The feature highlights his responsible work, personal commitment and dedication to supporting young people.": "حظي Alvaro Prieto بالتقدير لسنوات من العمل التربوي مع الأطفال والشباب. ويسلط المقال الضوء على عمله المسؤول والتزامه الشخصي وتفانيه في دعم الشباب.", "BAHRAIN PARENT SURVEY 2027": "استبيان أولياء الأمور في البحرين 2027", "Help us design care around real family needs.": "ساعدونا في تصميم رعاية تناسب احتياجات الأسر الحقيقية.", "The online parent survey will validate demand for Early Years Care, After-School Care, selected-day care, transport and language options.": "يساعد الاستبيان الإلكتروني في قياس الطلب على رعاية السنوات المبكرة وما بعد المدرسة والرعاية في أيام مختارة والنقل وخيارات اللغات.", "Open Parent Survey": "فتح استبيان أولياء الأمور", "Rooted in Bahrain.": "جذورنا في البحرين.", "Open to the world.": "ومنفتحون على العالم."}};
+const originals = new Map();
+function textNodes(root=document.body){
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  const a=[]; let n; while(n=w.nextNode()){ if(n.nodeValue.trim()) a.push(n); } return a;
+}
+const nodes=textNodes();
+nodes.forEach(n=>originals.set(n,n.nodeValue));
+function setLang(lang){
+  document.documentElement.lang=lang;
+  document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+  nodes.forEach(n=>{
+    const raw=originals.get(n), key=raw.trim();
+    if(lang==='en') n.nodeValue=raw;
+    else if(T[lang] && T[lang][key]) n.nodeValue=raw.replace(key,T[lang][key]);
+    else n.nodeValue=raw;
+  });
+  document.querySelectorAll('.langbtn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+}
+document.querySelectorAll('.langbtn').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+setLang('en');
+</script>
+
+<script>
+(function(){
+const extra={
+es:{
+"Almita is shaped by 13 years of professional experience with children, young people and families across education and social work, supported by German academic and professional qualifications. The founder’s background includes residential child and youth welfare, child protection, safeguarding, de-escalation and non-violent communication.":"Almita nace de 13 años de experiencia profesional con niños, jóvenes y familias en educación y pedagogía social, respaldada por formación académica y profesional alemana. La experiencia del fundador incluye protección infantil y juvenil, salvaguarda, desescalada y comunicación no violenta.",
+"His life and work across Peru, Germany and Vietnam bring an international perspective. Spanish heritage and a German educational and professional background support a family-centred vision that aims to listen first and respect Bahrain’s culture and family values.":"Su vida y trabajo en Perú, Alemania y Vietnam aportan una perspectiva internacional. Su herencia hispana y su formación educativa y profesional alemana respaldan una visión centrada en la familia que busca escuchar primero y respetar la cultura y los valores familiares de Bahréin.",
+"TESOL Teacher Training — 2026 • Completed with High Distinction.":"Formación docente TESOL — 2026 • Finalizada con High Distinction."
+},
+de:{
+"Almita is shaped by 13 years of professional experience with children, young people and families across education and social work, supported by German academic and professional qualifications. The founder’s background includes residential child and youth welfare, child protection, safeguarding, de-escalation and non-violent communication.":"Almita wird von 13 Jahren Berufserfahrung mit Kindern, Jugendlichen und Familien in Bildung und Sozialpädagogik geprägt, gestützt durch deutsche akademische und berufliche Qualifikationen. Der berufliche Hintergrund des Gründers umfasst stationäre Kinder- und Jugendhilfe, Kinderschutz, Safeguarding, Deeskalation und gewaltfreie Kommunikation.",
+"His life and work across Peru, Germany and Vietnam bring an international perspective. Spanish heritage and a German educational and professional background support a family-centred vision that aims to listen first and respect Bahrain’s culture and family values.":"Sein Leben und seine Arbeit in Peru, Deutschland und Vietnam bringen eine internationale Perspektive ein. Spanische Wurzeln sowie ein deutscher Bildungs- und Berufshintergrund unterstützen eine familienorientierte Vision, die zuerst zuhört und Bahrains Kultur und Familienwerte respektiert.",
+"TESOL Teacher Training — 2026 • Completed with High Distinction.":"TESOL Teacher Training — 2026 • Mit High Distinction abgeschlossen."
+},
+ar:{
+"Almita is shaped by 13 years of professional experience with children, young people and families across education and social work, supported by German academic and professional qualifications. The founder’s background includes residential child and youth welfare, child protection, safeguarding, de-escalation and non-violent communication.":"تستند ألميتا إلى 13 عاماً من الخبرة المهنية مع الأطفال والشباب والعائلات في التعليم والتربية الاجتماعية، مدعومة بمؤهلات أكاديمية ومهنية ألمانية. وتشمل خبرة المؤسس رعاية الأطفال والشباب، وحماية الطفل، والسلامة، وخفض التصعيد، والتواصل اللاعنفي.",
+"His life and work across Peru, Germany and Vietnam bring an international perspective. Spanish heritage and a German educational and professional background support a family-centred vision that aims to listen first and respect Bahrain’s culture and family values.":"تمنح حياته وعمله في بيرو وألمانيا وفيتنام منظوراً دولياً. وتدعم جذوره الإسبانية وخلفيته التعليمية والمهنية الألمانية رؤية تتمحور حول الأسرة وتهدف إلى الاستماع أولاً واحترام ثقافة البحرين وقيم الأسرة.",
+"TESOL Teacher Training — 2026 • Completed with High Distinction.":"تدريب TESOL للمعلمين — 2026 • أُنجز بتقدير High Distinction."
+}};
+if(typeof T!=="undefined"){Object.keys(extra).forEach(l=>Object.assign(T[l],extra[l]));}
+})();
+</script>
+
+<script>
+(function(){
+ const btn=document.querySelector('.philosophy-toggle');
+ const more=document.querySelector('.philosophy-more');
+ if(btn&&more){
+   btn.addEventListener('click',function(){
+     const open=btn.getAttribute('aria-expanded')==='true';
+     btn.setAttribute('aria-expanded',String(!open));
+     more.hidden=open;
+   });
+ }
+ const extra={
+  es:{
+   "OUR PHILOSOPHY":"NUESTRA FILOSOFÍA",
+   "Growing with the child — step by step.":"Crecer con el niño — paso a paso.",
+   "Discover the educational philosophy behind Almita and our child-centred approach to development, relationships and learning.":"Descubre la filosofía educativa detrás de Almita y nuestro enfoque centrado en el niño, su desarrollo, sus relaciones y su aprendizaje.",
+   "Our Philosophy":"Nuestra filosofía",
+   "Almita brings a German educational perspective shaped by a holistic and child-centred understanding of development. Children are not expected to develop everything at once. Each stage of childhood has its own needs, rhythms and ways of learning.":"Almita aporta una perspectiva educativa alemana basada en una comprensión integral y centrada en el niño. No esperamos que los niños desarrollen todo al mismo tiempo. Cada etapa de la infancia tiene sus propias necesidades, ritmos y formas de aprender.",
+   "0–7 years — Learning through experience":"0–7 años — Aprender a través de la experiencia",
+   "In the early years, children discover the world through imitation, movement, sensory experiences, emotional bonds, creativity and free play. A safe relationship and a predictable daily rhythm create the foundation for confidence and healthy development.":"Durante los primeros años, los niños descubren el mundo mediante la imitación, el movimiento, las experiencias sensoriales, los vínculos emocionales, la creatividad y el juego libre. Una relación segura y un ritmo diario predecible crean la base para la confianza y un desarrollo saludable.",
+   "7–14 years — Learning through connection":"7–14 años — Aprender a través de la conexión",
+   "As children grow, thinking, emotions and social awareness develop further. Creativity, imagination, friendships, responsibility, empathy and belonging become increasingly important. Almita aims to support this development through meaningful activities, movement, relationships and age-appropriate guidance.":"A medida que los niños crecen, el pensamiento, las emociones y la conciencia social continúan desarrollándose. La creatividad, la imaginación, las amistades, la responsabilidad, la empatía y el sentido de pertenencia adquieren mayor importancia. Almita busca acompañar este desarrollo mediante actividades significativas, movimiento, relaciones y orientación adecuada a cada edad.",
+   "Our principle:":"Nuestro principio:",
+   "Safety → Trust → Belonging → Development → Learning":"Seguridad → Confianza → Pertenencia → Desarrollo → Aprendizaje"
+  },
+  de:{
+   "OUR PHILOSOPHY":"UNSERE PHILOSOPHIE",
+   "Growing with the child — step by step.":"Mit dem Kind wachsen — Schritt für Schritt.",
+   "Discover the educational philosophy behind Almita and our child-centred approach to development, relationships and learning.":"Entdecken Sie die pädagogische Philosophie hinter Almita und unseren kindzentrierten Ansatz für Entwicklung, Beziehungen und Lernen.",
+   "Our Philosophy":"Unsere Philosophie",
+   "Almita brings a German educational perspective shaped by a holistic and child-centred understanding of development. Children are not expected to develop everything at once. Each stage of childhood has its own needs, rhythms and ways of learning.":"Almita bringt eine deutsche Bildungsperspektive ein, geprägt von einem ganzheitlichen und kindzentrierten Verständnis von Entwicklung. Von Kindern wird nicht erwartet, alles gleichzeitig zu entwickeln. Jede Phase der Kindheit hat eigene Bedürfnisse, Rhythmen und Lernwege.",
+   "0–7 years — Learning through experience":"0–7 Jahre — Lernen durch Erfahrung",
+   "In the early years, children discover the world through imitation, movement, sensory experiences, emotional bonds, creativity and free play. A safe relationship and a predictable daily rhythm create the foundation for confidence and healthy development.":"In den ersten Lebensjahren entdecken Kinder die Welt durch Nachahmung, Bewegung, Sinneserfahrungen, emotionale Bindungen, Kreativität und freies Spiel. Eine sichere Beziehung und ein verlässlicher Tagesrhythmus schaffen die Grundlage für Vertrauen und eine gesunde Entwicklung.",
+   "7–14 years — Learning through connection":"7–14 Jahre — Lernen durch Beziehung",
+   "As children grow, thinking, emotions and social awareness develop further. Creativity, imagination, friendships, responsibility, empathy and belonging become increasingly important. Almita aims to support this development through meaningful activities, movement, relationships and age-appropriate guidance.":"Mit zunehmendem Alter entwickeln sich Denken, Gefühle und soziales Bewusstsein weiter. Kreativität, Vorstellungskraft, Freundschaften, Verantwortung, Empathie und Zugehörigkeit gewinnen an Bedeutung. Almita möchte diese Entwicklung durch sinnvolle Aktivitäten, Bewegung, Beziehungen und altersgerechte Begleitung unterstützen.",
+   "Our principle:":"Unser Prinzip:",
+   "Safety → Trust → Belonging → Development → Learning":"Sicherheit → Vertrauen → Zugehörigkeit → Entwicklung → Lernen"
+  },
+  ar:{
+   "OUR PHILOSOPHY":"فلسفتنا",
+   "Growing with the child — step by step.":"ننمو مع الطفل — خطوة بخطوة.",
+   "Discover the educational philosophy behind Almita and our child-centred approach to development, relationships and learning.":"اكتشف الفلسفة التربوية وراء ألميتا ونهجنا الذي يضع الطفل في المركز في النمو والعلاقات والتعلّم.",
+   "Our Philosophy":"فلسفتنا",
+   "Almita brings a German educational perspective shaped by a holistic and child-centred understanding of development. Children are not expected to develop everything at once. Each stage of childhood has its own needs, rhythms and ways of learning.":"تقدم ألميتا منظوراً تربوياً ألمانياً يقوم على فهم شامل للنمو يضع الطفل في المركز. لا نتوقع من الأطفال أن يطوروا كل شيء في الوقت نفسه، فلكل مرحلة من الطفولة احتياجاتها وإيقاعها وطرقها الخاصة في التعلم.",
+   "0–7 years — Learning through experience":"0–7 سنوات — التعلّم من خلال التجربة",
+   "In the early years, children discover the world through imitation, movement, sensory experiences, emotional bonds, creativity and free play. A safe relationship and a predictable daily rhythm create the foundation for confidence and healthy development.":"في السنوات الأولى يكتشف الأطفال العالم من خلال التقليد والحركة والتجارب الحسية والروابط العاطفية والإبداع واللعب الحر. وتوفر العلاقة الآمنة والإيقاع اليومي المنتظم أساساً للثقة والنمو الصحي.",
+   "7–14 years — Learning through connection":"7–14 سنة — التعلّم من خلال التواصل",
+   "As children grow, thinking, emotions and social awareness develop further. Creativity, imagination, friendships, responsibility, empathy and belonging become increasingly important. Almita aims to support this development through meaningful activities, movement, relationships and age-appropriate guidance.":"مع نمو الأطفال يتطور التفكير والمشاعر والوعي الاجتماعي بصورة أكبر. وتزداد أهمية الإبداع والخيال والصداقات والمسؤولية والتعاطف والشعور بالانتماء. وتهدف ألميتا إلى دعم هذا التطور من خلال أنشطة هادفة وحركة وعلاقات وتوجيه مناسب للعمر.",
+   "Our principle:":"مبدؤنا:",
+   "Safety → Trust → Belonging → Development → Learning":"الأمان ← الثقة ← الانتماء ← التطور ← التعلّم"
+  }
+ };
+ if(typeof T!=="undefined") Object.keys(extra).forEach(l=>Object.assign(T[l],extra[l]));
+})();
+</script>
+
+<script id="book-press-accordion-js">
+document.addEventListener('DOMContentLoaded',function(){const b=document.getElementById('bpToggle'),p=document.getElementById('bpPanel');if(b&&p){b.addEventListener('click',function(){const open=p.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});}});
+</script>
 </body></html>
