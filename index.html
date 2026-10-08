@@ -286,6 +286,7 @@ footer{background:#143566;color:white;padding:55px 0 35px} .closing{font-size:cl
 </div></div></div></div></section>
 
 <section id="survey" class="soft"><div class="wrap"><div class="eyebrow">BAHRAIN PARENT SURVEY 2027</div><h2 class="title">Help us design care around real family needs.</h2>
+<p>Share your family’s needs in our short parent survey.</p><button class="philosophy-toggle survey-toggle" type="button" aria-expanded="false" aria-controls="surveyDetails">Parent Survey <span aria-hidden="true">⌄</span></button><div id="surveyDetails" hidden>
 <p>Almita is exploring a flexible, safety-centred concept for Bahraini and international families: Early Years Care for children aged 0–4 years and After-School Care for children aged 4–12 years, until parents finish work or are able to collect them. This survey is for market research only and does not represent an already licensed service.</p>
 <p><b>Anonymous • approx. 3 minutes • optional contact.</b></p>
 <div class="survey-model"><h3>PROPOSED SERVICE MODEL</h3><p><b>Early Years Care • 0–4 years:</b> Morning Care approx. 7:30–13:00 and Full Day Care approx. 7:30–18:00.</p><p><b>Pre-Booked Care on Selected Days • 0–4 years:</b> Care reserved in advance for specific selected days.</p><p><b>After-School Care • 4–12 years:</b> School dismissal–18:00: homework, movement, board games and creativity.</p><p><b>Languages:</b> Age-appropriate English • Arabic • German • Spanish.</p><p><b>Transport:</b> Optional potential school pick-up / transport, subject to approval and demand.</p></div>
@@ -309,7 +310,7 @@ footer{background:#143566;color:white;padding:55px 0 35px} .closing{font-size:cl
 <fieldset><legend>13. Is there anything else you would like Almita to offer or consider? (Optional)</legend><p>Please share any suggestions, needs or ideas that would make childcare or after-school care work better for your family.</p><textarea name="suggestions" rows="5" placeholder="Your suggestions"></textarea></fieldset>
 <label class="contact-label">Optional WhatsApp / Email:<input type="text" name="contact"></label>
 <button class="btn survey-submit" type="submit">Submit Survey</button><p id="surveyStatus" role="status" aria-live="polite"></p>
-</form></div></section>
+</form></div></div></section>
 
 <footer><div class="wrap"><p class="closing">Rooted in Bahrain.<br>Open to the world.</p><p><b>ALMITA DAILY CARE BAHRAIN</b></p><p dir="rtl" style="font-size:28px;text-align:left">ألميتا • الرعاية اليومية</p><p>FAMILY • CARE • COMMUNITY</p></div></footer>
 
@@ -435,6 +436,21 @@ document.addEventListener('DOMContentLoaded',function(){const b=document.getElem
    finally{b.disabled=false;}
  });
  form.querySelectorAll('[name="topFactors"]').forEach(x=>x.addEventListener('change',()=>{const s=form.querySelectorAll('[name="topFactors"]:checked');if(s.length>3){x.checked=false;status.textContent='Please select a maximum of three factors.';}else if(status.textContent.includes('maximum'))status.textContent='';}));
+})();
+</script>
+
+<script id="almita-survey-accordion-js">
+(function(){
+ const section=document.getElementById('survey');
+ const button=section&&section.querySelector('.survey-toggle');
+ const details=document.getElementById('surveyDetails');
+ if(!button||!details)return;
+ function setOpen(open){details.hidden=!open;button.setAttribute('aria-expanded',String(open));}
+ button.addEventListener('click',function(){setOpen(button.getAttribute('aria-expanded')!=='true');});
+ function openFromHash(){if(location.hash.toLowerCase()==='#survey'){setOpen(true);}}
+ window.addEventListener('hashchange',openFromHash);
+ openFromHash();
+ document.querySelectorAll('a[href="#survey"],a[href$="/#survey"]').forEach(function(link){link.addEventListener('click',function(){setOpen(true);});});
 })();
 </script>
 </body></html>
