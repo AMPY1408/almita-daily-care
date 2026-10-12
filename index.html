@@ -428,7 +428,7 @@ if(typeof T!=="undefined"){Object.keys(extra).forEach(l=>Object.assign(T[l],extr
 document.addEventListener('DOMContentLoaded',function(){
  const section=document.getElementById('founder');
  if(!section)return;
- const paragraphs=section.querySelectorAll('.founder > div:nth-child(2) > p');
+ const paragraphs=[section.querySelector('.founder > div:nth-child(2) > p'),section.querySelector('#founderPanel > p')];
  const quote=section.querySelector('.quote');
  const button=document.getElementById('founderToggle');
  const badges=Array.from(section.querySelectorAll('.badges span'));
@@ -453,7 +453,7 @@ document.addEventListener('DOMContentLoaded',function(){
  badges.forEach((el,i)=>{el.textContent=(badgeTranslations[lang]||originalBadges)[i]||originalBadges[i]});
  }
  document.querySelectorAll('.langbtn').forEach(el=>el.addEventListener('click',()=>render(el.dataset.lang)));
- render('en');
+ render(document.querySelector('.langbtn.active')?.dataset.lang || 'en');
 });
 </script>
 <script id="founder-accordion-js">document.addEventListener("DOMContentLoaded",function(){const b=document.getElementById("founderToggle"),p=document.getElementById("founderPanel");if(b&&p)b.addEventListener("click",function(){const open=p.classList.toggle("open");b.setAttribute("aria-expanded",String(open));});});</script>
