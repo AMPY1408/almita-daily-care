@@ -421,6 +421,38 @@ if(typeof T!=="undefined"){Object.keys(extra).forEach(l=>Object.assign(T[l],extr
 })();
 </script>
 
+<script id="founder-language-fix">
+document.addEventListener('DOMContentLoaded',function(){
+ const section=document.getElementById('founder');
+ if(!section)return;
+ const paragraphs=section.querySelectorAll('.founder > div:nth-child(2) > p');
+ const quote=section.querySelector('.quote');
+ const button=document.getElementById('founderToggle');
+ const badges=Array.from(section.querySelectorAll('.badges span'));
+ const originalBadges=badges.map(el=>el.textContent);
+ const copy={
+ en:{intro:'Almita is shaped by <b>13 years of professional experience</b> with children, young people and families across education and social work, supported by German academic and professional qualifications. The founder’s background includes residential child and youth welfare, child protection, safeguarding, de-escalation and non-violent communication.',more:'His life and work across Peru, Germany and Vietnam bring an international perspective. Spanish heritage and a German educational and professional background support a family-centred vision that aims to listen first and respect Bahrain’s culture and family values.',button:'More about the Founder',quote:'“Peru gave me my roots, Germany shaped my journey over 20 years, and Vietnam brought me inner peace. Love led me to Bahrain, where Almita gives my experiences a new purpose: helping children feel safe, loved and free to grow.”'},
+ es:{intro:'Almita se inspira en <b>13 años de experiencia profesional</b> con niños, jóvenes y familias en educación y trabajo social, respaldados por formación académica y profesional alemana. Su trayectoria incluye protección infantil y juvenil, atención residencial, prevención de riesgos, desescalada y comunicación no violenta.',more:'Su vida y trabajo en Perú, Alemania y Vietnam aportan una perspectiva internacional. Sus raíces peruanas y su formación alemana sustentan una visión centrada en las familias, que escucha sus necesidades y respeta la cultura y los valores de Bahréin.',button:'Más sobre el fundador',quote:'«Perú me dio mis raíces, Alemania marcó mi camino durante más de 20 años y Vietnam me trajo paz interior. El amor me llevó a Bahréin, donde Almita da un nuevo propósito a mis experiencias: ayudar a los niños a sentirse seguros, queridos y libres para crecer».'},
+ de:{intro:'Almita basiert auf <b>13 Jahren Berufserfahrung</b> mit Kindern, Jugendlichen und Familien in Bildung und Sozialarbeit sowie auf deutschen akademischen und beruflichen Qualifikationen. Der berufliche Hintergrund des Gründers umfasst stationäre Kinder- und Jugendhilfe, Kinderschutz, Prävention, Deeskalation und gewaltfreie Kommunikation.',more:'Sein Leben und seine Arbeit in Peru, Deutschland und Vietnam bringen eine internationale Perspektive ein. Seine peruanischen Wurzeln und sein deutscher Bildungs- und Berufshintergrund prägen eine familienorientierte Vision, die zuhört und Bahrains Kultur und Familienwerte respektiert.',button:'Mehr über den Gründer',quote:'„Peru gab mir meine Wurzeln, Deutschland prägte meinen Weg über 20 Jahre lang und Vietnam schenkte mir inneren Frieden. Die Liebe führte mich nach Bahrain, wo Almita meinen Erfahrungen einen neuen Sinn gibt: Kindern zu helfen, sich sicher, geliebt und frei in ihrer Entwicklung zu fühlen.“'},
+ ar:{intro:'تستند ألميتا إلى <b>13 عاماً من الخبرة المهنية</b> في العمل مع الأطفال والشباب والأسر في التعليم والعمل الاجتماعي، إلى جانب مؤهلات أكاديمية ومهنية ألمانية. وتشمل خبرة المؤسس رعاية الأطفال والشباب وحمايتهم والوقاية من المخاطر وتهدئة النزاعات والتواصل اللاعنفي.',more:'تمنح حياته وعمله في بيرو وألمانيا وفيتنام منظوراً دولياً. وتدعم جذوره البيروفية وخلفيته التعليمية والمهنية الألمانية رؤية تتمحور حول الأسرة، تستمع لاحتياجاتها وتحترم ثقافة البحرين وقيمها العائلية.',button:'المزيد عن المؤسس',quote:'«منحتني بيرو جذوري، وشكّلت ألمانيا مسيرتي لأكثر من عشرين عاماً، وجلبت لي فيتنام السلام الداخلي. قادني الحب إلى البحرين، حيث تمنح ألميتا تجاربي هدفاً جديداً: مساعدة الأطفال على الشعور بالأمان والحب والحرية في النمو».'}
+ };
+ const badgeTranslations={
+ es:['Educación Waldorf / Steiner alemana • Lima, Perú','Alemán • Reconocimiento oficial','Grado en Trabajo Social / Pedagogía Social • Universidad de Ciencias Aplicadas de Colonia','Formación en oratoria y coaching de vida • Academia Tobias Beck, Alemania','Protección infantil • Prevención • Desescalada','Alemán • Español • Inglés','Formación docente TESOL • 2026 • High Distinction'],
+ de:['Deutsche Waldorf-/Steiner-Pädagogik • Lima, Peru','Deutsch • Staatlich anerkannt','Bachelor Soziale Arbeit / Sozialpädagogik • TH Köln','Speaker- und Life-Coach-Ausbildung • Tobias Beck Academy, Deutschland','Kinderschutz • Prävention • Deeskalation','Deutsch • Spanisch • Englisch','TESOL-Lehrerausbildung • 2026 • High Distinction'],
+ ar:['تعليم فالدورف / شتاينر الألماني • ليما، بيرو','اللغة الألمانية • اعتراف رسمي','بكالوريوس العمل الاجتماعي / التربية الاجتماعية • جامعة كولونيا للعلوم التطبيقية','تدريب الخطابة والتوجيه الحياتي • أكاديمية توبياس بيك، ألمانيا','حماية الطفل • الوقاية • تهدئة النزاعات','الألمانية • الإسبانية • الإنجليزية','تدريب TESOL للمعلمين • 2026 • تقدير عالٍ']
+ };
+ function render(lang){
+ const t=copy[lang]||copy.en;
+ if(paragraphs[0])paragraphs[0].innerHTML=t.intro;
+ if(paragraphs[1])paragraphs[1].textContent=t.more;
+ if(quote)quote.textContent=t.quote;
+ if(button)button.innerHTML=t.button+' <span class="arrow" aria-hidden="true">⌄</span>';
+ badges.forEach((el,i)=>{el.textContent=(badgeTranslations[lang]||originalBadges)[i]||originalBadges[i]});
+ }
+ document.querySelectorAll('.langbtn').forEach(el=>el.addEventListener('click',()=>render(el.dataset.lang)));
+ render('en');
+});
+</script>
 <script id="founder-accordion-js">document.addEventListener("DOMContentLoaded",function(){const b=document.getElementById("founderToggle"),p=document.getElementById("founderPanel");if(b&&p)b.addEventListener("click",function(){const open=p.classList.toggle("open");b.setAttribute("aria-expanded",String(open));});});</script>
 <script id="book-press-accordion-js">
 document.addEventListener('DOMContentLoaded',function(){const b=document.getElementById('bpToggle'),p=document.getElementById('bpPanel');if(b&&p){b.addEventListener('click',function(){const open=p.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});}});
